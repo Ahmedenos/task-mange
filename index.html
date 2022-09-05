@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Task Manger</title>
+</head>
+<body>
+    <div class="nav justify-content-between bg-dark pl-5 pr-5" id="mynav">
+        <h1 class="navbar-brand text-light">My Tasks</h1>
+        <h2 class="text-light" id="device"></h2>
+        <div class="item align-self-center">
+            <li id="finshed" class="nav-link bg-primary d-inline-block rounded-circle text-light">0</li>
+            <li id="not-finshed" class="nav-link bg-success d-inline-block rounded-circle text-light">0</li>
+        </div>
+    </div>
+    <span id='my-color' ><i class="fa-solid fa-circle-half-stroke"></i></span>
+    <div class="time" ></div>
+<div class="container mt-5">
+    
+    <h3 class="text-primary">My List Tody</h3>
+    <form id='form' class="w-100">
+        <input type="text" class="form-control w-75 d-inline-block " placeholder="New Task"  id="inp">
+        <button type="submit" class="btn btn-primary" id="btn">Add</button>
+        <button type="submit" class="btn btn-danger" onclick='clearAll()'  id="cbtn">Clear</button>
+    </form>
+    <div id="enter-task" class="w-75 bg-warning text-center  text-danger animation" style="display: none;">Please Enter Task</div>
+    <div id="empty"  class="empty w-75 bg-danger text-center mt-1 p-2 text-light ">Tasks Empty</div>
+    <ul id="my-ul" class=" w-75 pl-0  border-1">
+        <!-- created Task -->
+        <!-- <li>
+            <div>
+                <input type="checkbox"> 
+                <span>First Task</span>
+            </div>
+            <div>
+                <span class="icons pr-3"><i class="fa-solid fa-eraser"></i></span>
+                <span class="icons"><i class="fa-solid fa-circle-minus"></i></span>
+            </div>
+        </li> -->
+    </ul>
+</div>
+<!-- <div class="list-end bg-success p-2 text-light " style="border-radius: 4px;">Your Achivments
+
+    <ul class="list-group text-success text-left" id="list-finsh">
+        <!-- <li class="list-group-item border-bottom-5">one</li>
+        <li class="list-group-item">one</li>
+        <li class="list-group-item">one</li> -->
+    <!-- </ul>
+    <button class="btn btn-danger" id="clear-checked">clear ALl</button>
+</div> --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="file.js"></script>
+</body>
+</html>
